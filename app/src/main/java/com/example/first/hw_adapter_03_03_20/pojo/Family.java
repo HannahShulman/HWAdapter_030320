@@ -9,7 +9,7 @@ public class Family extends Person {
     }
 
     @Override
-    String getType() {
+    public String getType() {
         return "Family";
     }
 

@@ -24,5 +24,5 @@ public abstract class Person {
         this.phone = phone;
     }
 
-    abstract String getType();
+    public abstract String getType();
 }

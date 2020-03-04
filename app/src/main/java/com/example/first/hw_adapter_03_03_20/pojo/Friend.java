@@ -9,7 +9,7 @@ public class Friend extends Person {
     }
 
     @Override
-    String getType() {
+    public String getType() {
         return "FRIEND";
     }
 }

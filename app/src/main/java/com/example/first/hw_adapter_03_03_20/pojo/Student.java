@@ -12,7 +12,7 @@ public class Student extends Person {
     }
 
     @Override
-    String getType() {
+    public String getType() {
         return "STUDENT";
     }
 }
