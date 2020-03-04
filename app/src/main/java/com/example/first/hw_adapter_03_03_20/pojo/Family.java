@@ -1,9 +1,10 @@
-package com.example.first.hw_adapter_03_03_20;
+package com.example.first.hw_adapter_03_03_20.pojo;
+
 
 public class Family extends Person {
 
     public Family() {
-        this.name = "Family Name";
+        super("Family Name");
         this.phone = "family number";
     }
 
@@ -11,4 +12,6 @@ public class Family extends Person {
     String getType() {
         return "Family";
     }
+
+
 }

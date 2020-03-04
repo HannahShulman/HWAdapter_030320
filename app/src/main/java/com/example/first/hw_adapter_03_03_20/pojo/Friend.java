@@ -1,9 +1,10 @@
-package com.example.first.hw_adapter_03_03_20;
+package com.example.first.hw_adapter_03_03_20.pojo;
+
 
 public class Friend extends Person {
 
     public Friend() {
-        this.name = "Friend Name";
+        super("Friend Name");
         this.phone = "phone number";
     }
 
