@@ -27,6 +27,13 @@
         android:layout_height="wrap_content"
         android:hint="enter phone" />
 
+    <EditText
+        android:id="@+id/type_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="type_et" />
+
+
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,6 +59,7 @@
     </RadioGroup>
 
     <Button
+        android:id="@+id/add_person"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
