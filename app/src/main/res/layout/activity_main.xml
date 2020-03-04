@@ -4,56 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/person_list"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    tools:listitem="@layout/friend_cell"
-    tools:itemCount="3"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/person_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:itemCount="3"
+        tools:listitem="@layout/friend_cell" />
 
     <EditText
+        android:id="@+id/name_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="name"
-        android:id="@+id/name_et"/>
+        android:hint="name" />
 
     <EditText
+        android:id="@+id/phone_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="enter phone"
-        android:id="@+id/phone_et"/>
+        android:hint="enter phone" />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Family"/>
 
         <RadioButton
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Friend"/>
+            android:layout_weight="1"
+            android:text="Family" />
 
         <RadioButton
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Student"/>
+            android:layout_weight="1"
+            android:text="Friend" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Student" />
     </RadioGroup>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add+ "
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="Add+ " />
 
 </LinearLayout>
