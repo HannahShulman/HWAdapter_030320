@@ -40,22 +40,31 @@
         android:orientation="horizontal">
 
         <RadioButton
+            android:id="@+id/family_radio"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Family" />
+            android:text="Family"
+            android:onClick="onRadioBtnC"
+            />
 
         <RadioButton
+            android:id="@+id/friend_radio"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Friend" />
+            android:text="Friend"
+            android:onClick="onRadioBtnC"
+            />
 
         <RadioButton
+            android:id="@+id/student_radio"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Student" />
+            android:text="Student"
+            android:onClick="onRadioBtnC"
+            />
     </RadioGroup>
 
     <Button

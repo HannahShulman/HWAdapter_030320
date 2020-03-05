@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 import com.example.first.hw_adapter_03_03_20.pojo.Family;
 import com.example.first.hw_adapter_03_03_20.pojo.Friend;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText nameEt, phoneET, type_et;
     Button addPerson;
+    String choice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,14 +48,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Person person;
-                switch (type_et.getText().toString().toLowerCase()){
-                    case  "s":
+                switch (choice){
+                    case  "student":
                         person = new Student("Math", 59.0);
                         break;
-                    case "f":
+                    case "friend":
                         person = new Friend();
                         break;
-                    case "fa":
+                    case "family":
                         person = new Family();
                         break;
                     default:
@@ -64,7 +66,28 @@ public class MainActivity extends AppCompatActivity {
              adapter.addPerson(person);
             }
         });
+    }
 
+    public void onRadioBtnC(View view){
+        boolean checked = ((RadioButton) view).isChecked();
 
+        switch (view.getId()){
+            case R.id.student_radio:
+                if(checked){
+                    choice = "student";
+                }
+                break;
+            case R.id.friend_radio:
+                if(checked){
+                    choice = "friend";
+                }
+                break;
+            case R.id.family_radio:
+                if(checked){
+                    choice = "family";
+                }
+                break;
+            default:
+        }
     }
 }
