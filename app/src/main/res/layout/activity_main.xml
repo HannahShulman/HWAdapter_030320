@@ -27,31 +27,28 @@
         android:layout_height="wrap_content"
         android:hint="enter phone" />
 
-    <EditText
-        android:id="@+id/type_et"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="type_et" />
-
-
     <RadioGroup
+        android:id="@+id/type_rg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <RadioButton
+            android:id="@+id/family_rb"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Family" />
 
         <RadioButton
+            android:id="@+id/friend_rb"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Friend" />
 
         <RadioButton
+            android:id="@+id/student_rb"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
