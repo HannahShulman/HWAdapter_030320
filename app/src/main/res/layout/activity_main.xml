@@ -36,23 +36,24 @@
         <RadioButton
             android:id="@+id/family_rb"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Family" />
+            android:layout_height="wrap_content"
+            android:text="Family"/>
 
         <RadioButton
             android:id="@+id/friend_rb"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Friend" />
+            android:layout_height="wrap_content"
+            android:text="Friend"/>
 
         <RadioButton
             android:id="@+id/student_rb"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Student" />
+            android:layout_height="wrap_content"
+            android:text="Student"/>
+
     </RadioGroup>
 
     <Button
