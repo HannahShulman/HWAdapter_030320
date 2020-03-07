@@ -1,5 +1,6 @@
 package com.example.first.hw_adapter_03_03_20;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,8 +10,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.first.hw_adapter_03_03_20.pojo.Person;
+import com.example.first.hw_adapter_03_03_20.pojo.Student;
 
 import java.util.ArrayList;
+
+import static android.graphics.Color.GREEN;
+import static android.graphics.Color.RED;
+import static android.graphics.Color.WHITE;
+import static android.hardware.camera2.params.RggbChannelVector.BLUE;
 
 public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonViewHolder> {
 
@@ -65,9 +72,17 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonView
     @Override
     public void onBindViewHolder(@NonNull PersonViewHolder holder, int position) {
         holder.name.setText(personList.get(position).getName());
+        holder.itemView.setBackgroundColor(GREEN);
 
-        if(holder instanceof FriendViewHolder){
+        if(holder instanceof FriendViewHolder){ // it doesn't change holders.
             ((FriendViewHolder) holder).phone.setText(personList.get(position).getPhone());
+            ((FriendViewHolder) holder).itemView.setBackgroundColor(RED);
+        } else if (holder instanceof FamilyViewHolder) {
+            ((FamilyViewHolder) holder).itemView.setBackgroundColor(BLUE);
+        } else if (holder instanceof StudentViewHolder) {
+            ((StudentViewHolder) holder).itemView.setBackgroundColor(WHITE);
+           // ((StudentViewHolder) holder).course.setText(); // Hi Hanni what can I write here to push the course name as created in the main activity?
+            // ((StudentViewHolder) holder).grade.setText((Student) personList.get(position).);//same same,  also casting as student can't get the grade or the course
         }
     }
 
@@ -88,9 +103,12 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonView
     }
 
     class StudentViewHolder extends PersonViewHolder{
-
+        TextView course;
+        TextView grade;
         public StudentViewHolder(@NonNull View itemView) {
             super(itemView);
+            course = itemView.findViewById(R.id.course);
+            grade = itemView.findViewById(R.id.grade);
         }
     }
 

@@ -7,9 +7,45 @@
     android:orientation="vertical">
 
     <TextView
+        android:gravity="center"
+        tools:text="Name"
+        android:layout_weight="1
+"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
         android:id="@+id/name"
         android:gravity="center"
         tools:text="djbvj"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center"
+        tools:text="Course"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/course"
+        android:gravity="center"
+        android:layout_weight="1"
+        tools:text="djbvj"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center"
+        tools:text="Grade"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/grade"
+        android:gravity="center"
+        android:layout_weight="1"
+        tools:text="djbvj"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
 </LinearLayout>

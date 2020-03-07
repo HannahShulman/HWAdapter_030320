@@ -10,6 +10,6 @@ public class Friend extends Person {
 
     @Override
     public String getType() {
-        return "FRIEND";
+        return "friend";
     }
 }
