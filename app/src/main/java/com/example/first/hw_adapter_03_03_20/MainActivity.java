@@ -19,6 +19,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Added a note :D
     EditText nameEt, phoneET, type_et;
     Button addPerson;
     String choice;
