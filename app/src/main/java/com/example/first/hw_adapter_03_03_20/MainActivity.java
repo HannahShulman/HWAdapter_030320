@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Person person;
-                switch (choice){
+                switch (choice){ //Added another note
                     case  "student":
                         person = new Student("Math", 59.0);
                         break;
